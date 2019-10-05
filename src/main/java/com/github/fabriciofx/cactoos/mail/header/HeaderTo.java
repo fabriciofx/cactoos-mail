@@ -1,9 +1,9 @@
 package com.github.fabriciofx.cactoos.mail.header;
 
-import org.cactoos.Output;
+import org.cactoos.Text;
 
 public final class HeaderTo extends HeaderEnvelope {
-    public HeaderTo(final Output output, final String email) {
-        super(output, "To", email);
+    public HeaderTo(final Text header, final String email) {
+        super(header, "To", email);
     }
 }

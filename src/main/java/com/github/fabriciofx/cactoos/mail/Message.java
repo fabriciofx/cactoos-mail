@@ -1,8 +1,8 @@
 package com.github.fabriciofx.cactoos.mail;
 
-import org.cactoos.Output;
+import org.cactoos.Text;
 
-public interface Message extends Output {
-    Output headers() throws Exception;
-    Output body() throws Exception;
+public interface Message extends Text {
+    Text headers() throws Exception;
+    Text body() throws Exception;
 }

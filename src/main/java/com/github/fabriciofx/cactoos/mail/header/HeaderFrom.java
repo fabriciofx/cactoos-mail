@@ -1,9 +1,9 @@
 package com.github.fabriciofx.cactoos.mail.header;
 
-import org.cactoos.Output;
+import org.cactoos.text.TextOf;
 
 public final class HeaderFrom extends HeaderEnvelope {
-    public HeaderFrom(final Output output, final String email) {
-        super(output, "From", email);
+    public HeaderFrom(final String email) {
+        super(new TextOf(""), "From", email);
     }
 }
